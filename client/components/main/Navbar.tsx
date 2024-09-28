@@ -32,7 +32,7 @@ const Navbar = () => {
       {/* Desktop navbar */}
       <header
         className={`w-full transsition-colors duration-300 ease-in-out text-white py-4 shadow-sm fixed top-0 left-0 right-0 z-50 ${
-          isScrolled ? "bg-NavyBlue" : "bg-transparent"
+          isScrolled ? "bg-DarkBlue" : "bg-transparent"
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-4 md:px-6">

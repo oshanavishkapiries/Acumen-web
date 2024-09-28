@@ -14,6 +14,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        LightPink: "#ea084e",
         DarkBlue: "#080b24",
         NavyBlue: "#003060",
         PowerBlue: "#055C9D",

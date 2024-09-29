@@ -39,8 +39,8 @@ const TechStack = () => {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Tech Stack
+            <h2 className="text-3xl font-semibold  tracking-wide text-foreground sm:text-4xl">
+              Tech garden
             </h2>
             <p className="max-w-[700px] text-muted-foreground md:text-xl lg:text-lg">
               The technologies we use to build amazing products.
@@ -49,7 +49,7 @@ const TechStack = () => {
         </div>
 
         <motion.div
-          className="grid items-center gap-6 mt-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-12"
+          className="grid items-center gap-6 mt-6 grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-12"
           variants={containerVariants}
           initial="hidden"
           whileInView="show"

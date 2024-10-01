@@ -1,17 +1,6 @@
-"use client";
-
 import React from "react";
-import Lottie from "react-lottie";
-
-import rocket from "@/public/lottie/rocket.json";
-import graph from "@/public/lottie/graph.json";
 
 const Services = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-  };
-
   return (
     <>
       <section className="w-full py-12 flex flex-col items-center justify-center">
@@ -31,7 +20,7 @@ const Services = () => {
 
           <div className="grid items-center gap-6 mt-6 grid-cols-1 lg:grid-cols-2">
             {/* start with us */}
-            <div className="w-full h-auto bg-blue-500/10 rounded-md p-4 sm:p-6 md:p-8 lg:p-10">
+            <div className="w-full h-full bg-blue-500/10 rounded-md p-4 sm:p-6 md:p-8 lg:p-10">
               <div className="w-full h-full flex flex-col gap-3">
                 <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                   Start with us
@@ -40,24 +29,17 @@ const Services = () => {
                   Turn your product idea into reality with the expertise of top
                   developers.
                 </h2>
-                <div className="flex flex-col sm:flex-row sm:gap-6">
-                  <p className="text-sm sm:text-base md:text-lg text-muted-foreground w-full">
-                    With expert teams, tailored guidance, and the right tools,
-                    we turn your product vision into reality. From concept to
-                    launch, we&apos;re with you at every step.
-                  </p>
 
-                  <div className="flex justify-center">
-                    <Lottie
-                      options={{ ...defaultOptions, animationData: rocket }} height={200}
-                    />
-                  </div>
-                </div>
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground w-full">
+                  With expert teams, tailored guidance, and the right tools, we
+                  turn your product vision into reality. From concept to launch,
+                  we&apos;re with you at every step.
+                </p>
               </div>
             </div>
 
             {/* Grow with us */}
-            <div className="w-full h-auto bg-green-500/10 rounded-md p-4 sm:p-6 md:p-8 lg:p-10">
+            <div className="w-full h-full bg-green-500/10 rounded-md p-4 sm:p-6 md:p-8 lg:p-10">
               <div className="w-full h-full flex flex-col gap-3">
                 <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-green-400 to-cyan-500 bg-clip-text text-transparent">
                   Grow with us
@@ -66,19 +48,16 @@ const Services = () => {
                   Expand your reach and grow your brand with expert digital
                   marketing strategies
                 </h2>
-                <div className="flex flex-col sm:flex-row sm:gap-6">
-                  <p className="text-sm sm:text-base md:text-lg text-muted-foreground w-full">
-                    We provide tailored marketing solutions, expert advice, and
-                    the support to grow your brand. Whether you&apos;re starting
-                    fresh or scaling up, we’re here to guide your success
-                  </p>
 
-                  <div className="flex justify-center">
-                    <Lottie
-                      options={{ ...defaultOptions, animationData: graph }}  height={200}
-                    />
-                  </div>
-                </div>
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground w-full">
+                  We provide tailored marketing solutions, expert advice, and
+                  the support to grow your brand. Whether you&apos;re starting
+                  fresh or scaling up, we’re here to guide your success
+                </p>
+
+                {/* contact-us scroll pointer start */}
+                <div id="contact-us"></div>
+                {/* contact-us scroll pointer end */}
               </div>
             </div>
           </div>

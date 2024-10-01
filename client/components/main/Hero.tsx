@@ -25,7 +25,7 @@ const Hero = () => {
                 </p>
                 {/* mobile contact us button */}
                 <Link
-                  href="#"
+                  href="#contact-us"
                   className="items-center text-sm justify-center rounded-sm bg-LightPink px-4 py-2
                focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring 
                disabled:pointer-events-none disabled:opacity-50 hover:bg-LightPink/95 lg:hidden inline-flex "

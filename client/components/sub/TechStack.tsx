@@ -65,6 +65,10 @@ const TechStack = () => {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* service scroll pointer start */}
+        <div id="services"></div>
+        {/* service scroll pointer end */}
       </div>
     </section>
   );

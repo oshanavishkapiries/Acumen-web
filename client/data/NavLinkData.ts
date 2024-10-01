@@ -10,7 +10,7 @@ export const NavLinkData: INavLinkData = [
   },
   {
     name: "Services",
-    path: "/services",
+    path: "#services",
   },
   {
     name: "Helloworld",
@@ -18,6 +18,6 @@ export const NavLinkData: INavLinkData = [
   },
   {
     name: "About Us",
-    path: "/about-us",
+    path: "#about-us",
   },
 ];

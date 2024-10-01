@@ -71,7 +71,10 @@ const ContactUs = () => {
                     className="min-h-[150px]"
                   />
                 </div>
-                <Button type="submit" className="w-full bg-DarkBlue hover:bg-DarkBlue/70">
+                <Button
+                  type="submit"
+                  className="w-full bg-DarkBlue hover:bg-DarkBlue/70"
+                >
                   Send message
                 </Button>
               </form>

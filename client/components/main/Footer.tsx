@@ -6,7 +6,7 @@ import { footerData } from "@/data/FooterLinkData";
 
 const Footer = () => {
   return (
-    <footer className="bg-background text-foreground px-5 py-8 sm:py-12 lg:py-16">
+    <footer className="bg-DarkBlue text-white px-5 py-8 sm:py-12 lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="flex flex-col items-start gap-2">
           <Link href="/" prefetch={false}>

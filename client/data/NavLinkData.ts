@@ -21,5 +21,3 @@ export const NavLinkData: INavLinkData = [
     path: "/about-us",
   },
 ];
-
-

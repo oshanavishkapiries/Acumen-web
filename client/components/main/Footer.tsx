@@ -3,6 +3,7 @@ import Link from "next/link";
 
 // Data import
 import { footerData } from "@/data/FooterLinkData";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -10,13 +11,13 @@ const Footer = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="flex flex-col items-start gap-2">
           <Link href="/" prefetch={false}>
-            {/* <Image
-              src={footerData.companyInfo.logo}
+            <Image
+              src="/img/logo.png"
               alt="logo"
-              width={170}
-              height={50}
-            /> */}
-            acumen
+              width={100}
+              height={40}
+            />
+        
           </Link>
           <p className="text-muted-foreground text-sm">
             {footerData.companyInfo.description}

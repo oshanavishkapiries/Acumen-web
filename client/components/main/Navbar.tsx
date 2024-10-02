@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 
 //Data Imports
 import { NavLinkData } from "@/data/NavLinkData";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,7 +38,7 @@ const Navbar = () => {
       >
         <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
           <Link href="#" className="text-4xl font-bold" prefetch={false}>
-            acumen.
+            <Image src="/img/logo.png" width="170" height="50" alt="logo" className="w-36 h-auto" />
           </Link>
           <nav className="hidden lg:flex items-center space-x-6">
             {NavLinkData.map((navLink) => (
@@ -54,9 +55,9 @@ const Navbar = () => {
           <div className="flex flex-row items-center space-x-4">
             <Link
               href="#contact-us"
-              className=" items-center font-semibold justify-center rounded-sm bg-LightPink px-10 py-3 
+              className=" items-center  animate-shimmer bg-[linear-gradient(110deg,#E91E63,45%,#fc6c9d,55%,#E91E63)] bg-[length:200%_100%] font-semibold justify-center rounded-sm px-10 py-3 
                focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring 
-               disabled:pointer-events-none disabled:opacity-50 hover:bg-LightPink/95 hidden lg:inline-flex"
+               disabled:pointer-events-none disabled:opacity-50 hover:opacity-95 hidden lg:inline-flex"
               prefetch={false}
             >
               Contact Us

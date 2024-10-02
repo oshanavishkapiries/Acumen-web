@@ -20,8 +20,8 @@ const Services = () => {
 
           <div className="grid items-center gap-6 mt-6 grid-cols-1 lg:grid-cols-2">
             {/* start with us */}
-            <div className="w-full h-full bg-blue-500/10 rounded-md p-4 sm:p-6 md:p-8 lg:p-10">
-              <div className="w-full h-full flex flex-col gap-3">
+            <div className="w-full relative overflow-hidden h-full rounded-md">
+              <div className="w-full flex h-full flex-col gap-3 bg-[#e8f9f9] p-4 sm:p-6 md:p-8 lg:p-10">
                 <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                   Start with us
                 </h3>

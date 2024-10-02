@@ -16,12 +16,12 @@ const ContactUs = () => {
   return (
     <>
       <section className="w-full py-12 flex flex-col items-center justify-center">
-        <div className="grid items-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
+        <div className="container grid items-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-5">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Get in touch
             </h2>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Have a question or need help? Reach out to our team through
               WhatsApp or give us a call.
             </p>

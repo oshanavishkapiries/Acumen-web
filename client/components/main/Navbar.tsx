@@ -38,7 +38,13 @@ const Navbar = () => {
       >
         <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
           <Link href="#" className="text-4xl font-bold" prefetch={false}>
-            <Image src="/img/logo.png" width="170" height="50" alt="logo" className="w-36 h-auto" />
+            <Image
+              src="/img/logo.png"
+              width="170"
+              height="50"
+              alt="logo"
+              className=" w-24 md:w-36 h-auto"
+            />
           </Link>
           <nav className="hidden lg:flex items-center space-x-6">
             {NavLinkData.map((navLink) => (

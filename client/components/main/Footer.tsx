@@ -8,14 +8,18 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-DarkBlue text-white px-5 py-8 sm:py-12 lg:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <>
+
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:p-5">
         <div className="flex flex-col items-start gap-2">
           <Link href="/" prefetch={false}>
             <Image
               src="/img/logo.png"
               alt="logo"
-              width={100}
-              height={40}
+              width={150}
+              height={60}
+              className=" "
             />
         
           </Link>
@@ -37,7 +41,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="container mt-8 sm:mt-12 lg:mt-16 flex flex-col sm:flex-row items-center justify-between">
+      <div className=" mt-8 sm:mt-12 lg:mt-16 flex flex-col sm:flex-row items-center justify-between md:p-5">
         <p className="text-sm text-muted-foreground">
           &copy; 2024 Acme Inc. All rights reserved.
         </p>
@@ -47,6 +51,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
+      </>
     </footer>
   );
 };

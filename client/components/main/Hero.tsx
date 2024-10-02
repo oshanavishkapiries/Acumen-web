@@ -19,7 +19,7 @@ const Hero = () => {
                   </span>{" "}
                   for Growth and Digital Excellence
                 </h1>
-                <p className="mx-auto max-w-[700px] py-3 font-semibold text-xl md:text-2xl lg:text-3xl opacity-75">
+                <p className="mx-auto max-w-[700px] py-3 font-md text-xl md:text-2xl lg:text-3xl opacity-75">
                   Acumen turns your ideas into reality, guiding you from concept
                   to successful implementation.
                 </p>

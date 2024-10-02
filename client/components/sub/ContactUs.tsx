@@ -15,13 +15,13 @@ import { PhoneIcon } from "lucide-react";
 const ContactUs = () => {
   return (
     <>
-      <section className="w-full py-12 flex flex-col items-center justify-center">
-        <div className="container grid items-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
-          <div className="space-y-5">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+      <section className="w-full py-12 flex flex-col items-center justify-center md:my-[100px]">
+        <div className="container grid items-center  px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
+          <div className="space-y-5 p-6">
+            <h2 className="text-3xl font-bold tracking-tighter text-[#364969] sm:text-4xl md:text-5xl">
               Get in touch
             </h2>
-            <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="font-md md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Have a question or need help? Reach out to our team through
               WhatsApp or give us a call.
             </p>
@@ -29,7 +29,7 @@ const ContactUs = () => {
               <Link
                 href="#"
                 target="_blank"
-                className="inline-flex items-center justify-center rounded-md bg-green-500 px-6 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-green-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-500 disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex items-center justify-center rounded-md bg-green-500 px-6 py-2 md:px-8 sm:py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-green-400 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-500 disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 <PhoneIcon className="mr-2 h-5 w-5" />
@@ -37,7 +37,7 @@ const ContactUs = () => {
               </Link>
               <Link
                 href="#"
-                className="inline-flex bg-DarkBlue  hover:bg-DarkBlue/70 items-center justify-center rounded-md px-6 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex bg-[#364969]  hover:bg-DarkBlue/70 items-center justify-center rounded-md px-6 py-2 sm:px-8 md:py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 <PhoneIcon className="mr-2 h-5 w-5" />
@@ -47,7 +47,7 @@ const ContactUs = () => {
           </div>
           <Card className="w-full border-none shadow-none">
             <CardHeader>
-              <CardTitle>Send us a message</CardTitle>
+              <CardTitle className="text-2xl text-[#364969]">Send us a message</CardTitle>
               <CardDescription>
                 Fill out the form below and we&apos;ll get back to you as soon
                 as possible.
@@ -56,7 +56,7 @@ const ContactUs = () => {
             <CardContent>
               <form className="grid gap-4">
                 <div className="grid gap-2">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email" className="font-semibold text-[#81859E]">Email</Label>
                   <Input
                     id="email"
                     type="email"
@@ -64,7 +64,7 @@ const ContactUs = () => {
                   />
                 </div>
                 <div className="grid gap-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message" className="font-semibold text-[#81859E]">Message</Label>
                   <Textarea
                     id="message"
                     placeholder="Enter your message"
@@ -73,7 +73,7 @@ const ContactUs = () => {
                 </div>
                 <Button
                   type="submit"
-                  className="w-full bg-DarkBlue hover:bg-DarkBlue/70"
+                  className="w-full bg-[#364969] hover:bg-DarkBlue/70"
                 >
                   Send message
                 </Button>

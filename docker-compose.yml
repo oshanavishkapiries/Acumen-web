@@ -1,0 +1,22 @@
+version: "3.8"
+
+
+services:
+# Frontend services
+  client:
+    build: ./client
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=development
+    # CHOKIDAR_USEPOLLING=true for hot reload
+      - CHOKIDAR_USEPOLLING=true
+    develop:
+      watch:
+        - path: ./client/package.json
+          action: rebuild
+        - path: ./client/package-lock.json
+          action: rebuild
+        - path: ./client
+          target: /app
+          action: sync

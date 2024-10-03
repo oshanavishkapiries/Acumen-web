@@ -1,5 +1,3 @@
-import Footer from "@/components/main/Footer";
-import Navbar from "@/components/main/Navbar";
 import React from "react";
 
 const MainLayouts = ({
@@ -7,13 +5,7 @@ const MainLayouts = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  return (
-    <main className="w-full min-h-screen">
-      <Navbar />
-      {children}
-      <Footer />
-    </main>
-  );
+  return <main className="w-full min-h-screen">{children}</main>;
 };
 
 export default MainLayouts;

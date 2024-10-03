@@ -1,14 +1,14 @@
 "use client";
 
 import React from "react";
-import { AuroraBackground } from "../sub/aurora-background";
+import { AuroraBackground } from "./aurora-background";
 import Link from "next/link";
 
 const Hero = () => {
   return (
     <>
       <AuroraBackground className="bg-DarkBlue text-white h-screen">
-        <section className="py-24 lg:py-32 xl:py-48 z-30 container">
+        <section className="py-24 lg:py-32 xl:py-48 container">
           <div className="flex flex-col items-center justify-center px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">

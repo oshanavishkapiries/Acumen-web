@@ -3,7 +3,7 @@ import { LocateIcon, MailIcon, PhoneIcon } from "lucide-react";
 export const footerData = {
   companyInfo: {
     logo: "/ACUMEN.png",
-    description: "Crafting beautiful and functional products since 2010.",
+    description: "Crafting beautiful and functional products since 2024.",
   },
   quickLinks: [
     { label: "Home", href: "#" },

@@ -37,7 +37,7 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
-          <Link href="#" className="text-4xl font-bold" prefetch={false}>
+          <Link href="/" className="text-4xl font-bold" prefetch={false}>
             <Image
               src="/img/logo.png"
               width="170"

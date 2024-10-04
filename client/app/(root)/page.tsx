@@ -4,6 +4,7 @@ import Navbar from "@/components/special/rootComponents/Navbar";
 import ContactUs from "@/components/special/rootComponents/ContactUs";
 import Services from "@/components/special/rootComponents/Services";
 import TechStack from "@/components/special/rootComponents/TechStack";
+import AboutUs from "@/components/special/rootComponents/AboutUs";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <TechStack />
       <Services />
       <ContactUs />
+      <AboutUs />
       <Footer />
     </>
   );

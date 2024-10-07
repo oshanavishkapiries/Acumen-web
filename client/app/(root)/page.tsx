@@ -5,16 +5,18 @@ import ContactUs from "@/components/special/rootComponents/ContactUs";
 import Services from "@/components/special/rootComponents/Services";
 import TechStack from "@/components/special/rootComponents/TechStack";
 import AboutUs from "@/components/special/rootComponents/AboutUs";
+import Slogan from "@/components/special/rootComponents/Slogan";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      <TechStack />
+      <TechStack />   
       <Services />
       <ContactUs />
       <AboutUs />
+      <Slogan />
       <Footer />
     </>
   );

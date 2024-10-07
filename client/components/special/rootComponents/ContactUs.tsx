@@ -1,3 +1,6 @@
+"use client"
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 import {
   Card,
@@ -13,19 +16,49 @@ import { Button } from "@/components/ui/button";
 import { PhoneIcon } from "lucide-react";
 
 const ContactUs = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5
+      }
+    }
+  };
+
   return (
-    <>
-      <section className="w-full py-12 flex flex-col items-center justify-center">
-        <div className="container grid items-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
-          <div className="space-y-5">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Get in touch
-            </h2>
-            <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Have a question or need help? Reach out to our team through
-              WhatsApp or give us a call.
-            </p>
-            <div className="flex flex-col gap-4 sm:flex-row">
+    <motion.section
+      ref={ref}
+      className="w-full py-12 flex flex-col items-center justify-center"
+      variants={containerVariants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+    >
+      <div className="container grid items-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
+        <motion.div className="space-y-5" variants={itemVariants}>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Get in touch
+          </h2>
+          <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Have a question or need help? Reach out to our team through
+            WhatsApp or give us a call.
+          </p>
+          <div className="flex flex-col gap-4 sm:flex-row">
+            <motion.div variants={itemVariants}>
               <Link
                 href="#"
                 target="_blank"
@@ -35,16 +68,20 @@ const ContactUs = () => {
                 <PhoneIcon className="mr-2 h-5 w-5" />
                 WhatsApp
               </Link>
+            </motion.div>
+            <motion.div variants={itemVariants}>
               <Link
                 href="#"
-                className="inline-flex bg-DarkBlue  hover:bg-DarkBlue/70 items-center justify-center rounded-md px-6 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex bg-DarkBlue hover:bg-DarkBlue/70 items-center justify-center rounded-md px-6 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 <PhoneIcon className="mr-2 h-5 w-5" />
                 Call us
               </Link>
-            </div>
+            </motion.div>
           </div>
+        </motion.div>
+        <motion.div variants={itemVariants}>
           <Card className="w-full border-none shadow-none">
             <CardHeader>
               <CardTitle>Send us a message</CardTitle>
@@ -55,34 +92,36 @@ const ContactUs = () => {
             </CardHeader>
             <CardContent>
               <form className="grid gap-4">
-                <div className="grid gap-2">
+                <motion.div className="grid gap-2" variants={itemVariants}>
                   <Label htmlFor="email">Email</Label>
                   <Input
                     id="email"
                     type="email"
                     placeholder="Enter your email"
                   />
-                </div>
-                <div className="grid gap-2">
+                </motion.div>
+                <motion.div className="grid gap-2" variants={itemVariants}>
                   <Label htmlFor="message">Message</Label>
                   <Textarea
                     id="message"
                     placeholder="Enter your message"
                     className="min-h-[150px]"
                   />
-                </div>
-                <Button
-                  type="submit"
-                  className="w-full bg-DarkBlue hover:bg-DarkBlue/70"
-                >
-                  Send message
-                </Button>
+                </motion.div>
+                <motion.div variants={itemVariants}>
+                  <Button
+                    type="submit"
+                    className="w-full bg-DarkBlue hover:bg-DarkBlue/70"
+                  >
+                    Send message
+                  </Button>
+                </motion.div>
               </form>
             </CardContent>
           </Card>
-        </div>
-      </section>
-    </>
+        </motion.div>
+      </div>
+    </motion.section>
   );
 };
 

@@ -4,6 +4,7 @@ const HellowPage = () => {
   return (
     <>
       <Hero />
+      
     </>
   );
 };

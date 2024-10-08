@@ -29,10 +29,10 @@ export default function Slogan() {
   };
 
   return (
-    <div className="w-full py-12 bg-gradient-to-r from-DarkBlue to-NavyBlue">
+    <div className="py-12">
       <div className="max-w-4xl mx-auto px-4" ref={ref}>
         <motion.h1
-          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-center"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}

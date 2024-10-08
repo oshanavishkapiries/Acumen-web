@@ -3,8 +3,7 @@ import Hero from "@/components/special/helloworldComponents/Hero";
 const HellowPage = () => {
   return (
     <>
-      <Hero />
-      
+      <Hero />    
     </>
   );
 };

@@ -83,6 +83,10 @@
     background: #080b24;
     background-clip: content-box;
   }
+  .ide-rotate {
+    transform-style: preserve-3d;
+    transform: rotateY(-7deg) rotateX(11deg);
+  }
 }
 
 /* hero section aura animation == Start */

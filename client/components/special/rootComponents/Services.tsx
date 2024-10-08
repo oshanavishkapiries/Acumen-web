@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import React from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 const Services = () => {
   const ref = useRef(null);
@@ -12,9 +13,9 @@ const Services = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3
-      }
-    }
+        staggerChildren: 0.3,
+      },
+    },
   };
 
   const itemVariants = {
@@ -23,9 +24,9 @@ const Services = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5
-      }
-    }
+        duration: 0.5,
+      },
+    },
   };
 
   return (
@@ -46,9 +47,10 @@ const Services = () => {
               We craft you quality products <br></br> with the dedicated
               marketing expertise.
             </h2>
+
             <p className="max-w-[700px] text-muted-foreground md:text-xl lg:text-lg">
-              We leverage you with the best tools and strategies to drive
-              growth and success.
+              We leverage you with the best tools and strategies to drive growth
+              and success.
             </p>
           </div>
         </motion.div>
@@ -66,6 +68,13 @@ const Services = () => {
                 Turn your product idea into reality with the expertise of top
                 developers.
               </h2>
+              <Image
+                className="w-full h-full rounded-md my-2"
+                src="/img/services-1.png"
+                width={1376}
+                height={768}
+                alt="Services"
+              />
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground w-full">
                 With expert teams, tailored guidance, and the right tools, we
                 turn your product vision into reality. From concept to launch,
@@ -86,10 +95,17 @@ const Services = () => {
                 Expand your reach and grow your brand with expert digital
                 marketing strategies
               </h2>
+              <Image
+                className="w-full h-full rounded-md my-2"
+                src="/img/services-1.png"
+                width={1376}
+                height={768}
+                alt="Services"
+              />
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground w-full">
-                We provide tailored marketing solutions, expert advice, and
-                the support to grow your brand. Whether you&apos;re starting
-                fresh or scaling up, we&apos;re here to guide your success
+                We provide tailored marketing solutions, expert advice, and the
+                support to grow your brand. Whether you&apos;re starting fresh
+                or scaling up, we&apos;re here to guide your success
               </p>
               <div id="contact-us"></div>
             </div>

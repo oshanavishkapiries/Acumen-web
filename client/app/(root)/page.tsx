@@ -12,11 +12,11 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <TechStack />   
+      <Slogan />
+      <TechStack />
       <Services />
       <ContactUs />
       <AboutUs />
-      <Slogan />
       <Footer />
     </>
   );

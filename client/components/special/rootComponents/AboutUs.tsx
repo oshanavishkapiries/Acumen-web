@@ -56,7 +56,7 @@ const AboutUs = () => {
             variants={itemVariants}
           >
             <div className="flex items-center gap-4">
-              <div className="bg-DarkBlue rounded-md p-3 flex items-center justify-center">
+              <div className="bg-DarkBlue rounded-md p-3 mb-2 flex items-center justify-center">
                 <LightbulbIcon className="w-6 h-6 text-primary-foreground" />
               </div>
               <h3 className="text-xl font-semibold">Innovation</h3>
@@ -71,7 +71,7 @@ const AboutUs = () => {
             variants={itemVariants}
           >
             <div className="flex items-center gap-4">
-              <div className="bg-DarkBlue rounded-md p-3 flex items-center justify-center">
+              <div className="bg-DarkBlue rounded-md p-3 mb-2  flex items-center justify-center">
                 <UsersIcon className="w-6 h-6 text-primary-foreground" />
               </div>
               <h3 className="text-xl font-semibold">Collaboration</h3>
@@ -86,7 +86,7 @@ const AboutUs = () => {
             variants={itemVariants}
           >
             <div className="flex items-center gap-4">
-              <div className="bg-DarkBlue rounded-md p-3 flex items-center justify-center">
+              <div className="bg-DarkBlue rounded-md p-3 mb-2 flex items-center justify-center">
                 <RocketIcon className="w-6 h-6 text-primary-foreground" />
               </div>
               <h3 className="text-xl font-semibold">Growth</h3>

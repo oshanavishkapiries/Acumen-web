@@ -117,6 +117,7 @@ const ScrollingCodeSnippets = () => {
                   width={25}
                   height={25}
                   alt={snippet.language}
+                  loading="lazy"
                 />
                 <h3 className="text-sm font-semibold text-white mb-2">
                   {snippet.language}

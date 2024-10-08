@@ -37,7 +37,7 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
-          <Link href="/" className="text-4xl font-bold" prefetch={false}>
+          <a href="/" className="text-4xl font-bold">
             <Image
               src="/img/logo.png"
               width="170"
@@ -45,7 +45,7 @@ const Navbar = () => {
               alt="logo"
               className=" w-24 md:w-36 h-auto"
             />
-          </Link>
+          </a>
           <nav className="hidden lg:flex items-center space-x-6">
             {NavLinkData.map((navLink) => (
               <Link
@@ -59,15 +59,14 @@ const Navbar = () => {
             ))}
           </nav>
           <div className="flex flex-row items-center space-x-4">
-            <Link
+            <a
               href="#contact-us"
               className=" items-center  animate-shimmer bg-[linear-gradient(110deg,#E91E63,45%,#fc6c9d,55%,#E91E63)] bg-[length:200%_100%] font-semibold justify-center rounded-sm px-10 py-3 
                focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring 
                disabled:pointer-events-none disabled:opacity-50 hover:opacity-95 hidden lg:inline-flex"
-              prefetch={false}
             >
               Contact Us
-            </Link>
+            </a>
 
             {/* Mobile navbar */}
             <div className="lg:hidden">
@@ -83,14 +82,13 @@ const Navbar = () => {
                 >
                   <div className="grid gap-4 p-4">
                     {NavLinkData.map((navLink) => (
-                      <Link
+                      <a
                         key={navLink.name}
                         href={navLink.path}
                         className="hover:text-primary transition-colors"
-                        prefetch={false}
                       >
                         {navLink.name}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </SheetContent>

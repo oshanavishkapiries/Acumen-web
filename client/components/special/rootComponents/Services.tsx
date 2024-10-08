@@ -2,7 +2,6 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import Image from "next/image";
 
 const Services = () => {
   const ref = useRef(null);
@@ -68,13 +67,7 @@ const Services = () => {
                 Turn your product idea into reality with the expertise of top
                 developers.
               </h2>
-              <Image
-                className="w-full h-full rounded-md my-2"
-                src="/img/services-1.png"
-                width={1376}
-                height={768}
-                alt="Services"
-              />
+
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground w-full">
                 With expert teams, tailored guidance, and the right tools, we
                 turn your product vision into reality. From concept to launch,
@@ -95,13 +88,7 @@ const Services = () => {
                 Expand your reach and grow your brand with expert digital
                 marketing strategies
               </h2>
-              <Image
-                className="w-full h-full rounded-md my-2"
-                src="/img/services-1.png"
-                width={1376}
-                height={768}
-                alt="Services"
-              />
+
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground w-full">
                 We provide tailored marketing solutions, expert advice, and the
                 support to grow your brand. Whether you&apos;re starting fresh

@@ -8,14 +8,13 @@ const Hero = () => {
     <>
       <section className="relative w-full min-h-screen bg-gradient-to-r from-DarkBlue to-NavyBlue text-white flex flex-col items-center justify-center overflow-hidden">
         {/* Background Video */}
-        <video
+        <Image
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/video/bg-video.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-        ></video>
+          src="/img/bg-git.gif"
+          alt={"gif"}
+          width={1920}
+          height={1080}
+        ></Image>
 
         {/* Overlay for gradient effect */}
         <div className="absolute inset-0 bg-gradient-to-r from-DarkBlue to-NavyBlue opacity-90"></div>

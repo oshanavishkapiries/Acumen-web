@@ -52,7 +52,7 @@ const Navbar = () => {
                 key={navLink.name}
                 href={navLink.path}
                 className="font-semibold hover:scale-110 transition-all delay-75"
-                prefetch={false}
+                prefetch={true}
               >
                 {navLink.name}
               </Link>
@@ -82,13 +82,14 @@ const Navbar = () => {
                 >
                   <div className="grid gap-4 p-4">
                     {NavLinkData.map((navLink) => (
-                      <a
+                      <Link
                         key={navLink.name}
                         href={navLink.path}
+                        prefetch={true}
                         className="hover:text-primary transition-colors"
                       >
                         {navLink.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </SheetContent>

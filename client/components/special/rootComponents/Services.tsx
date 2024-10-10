@@ -2,6 +2,7 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 const Services = () => {
   const ref = useRef(null);
@@ -59,10 +60,17 @@ const Services = () => {
             className="w-full relative overflow-hidden h-full rounded-md"
             variants={itemVariants}
           >
-            <div className="w-full flex h-full flex-col gap-3 bg-[#e8f9f9] p-4 sm:p-6 md:p-8 lg:p-10">
+            <div className="w-full flex h-full flex-col gap-3 bg-[#e8f9f9] p-3 sm:p-4 md:p-5 lg:p-7">
               <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                 Start with us
               </h3>
+              <Image
+                src="https://shorturl.at/jo7GI"
+                alt="icon"
+                width={1000}
+                height={700}
+                className="w-full rounded-lg my-3"
+              />
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wide text-foreground">
                 Turn your product idea into reality with the expertise of top
                 developers.
@@ -77,13 +85,20 @@ const Services = () => {
           </motion.div>
 
           <motion.div
-            className="w-full h-full bg-green-500/10 rounded-md p-4 sm:p-6 md:p-8 lg:p-10"
+            className="w-full h-full bg-green-500/10 rounded-md p-3 sm:p-4 md:p-5 lg:p-7"
             variants={itemVariants}
           >
             <div className="w-full h-full flex flex-col gap-3">
               <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-green-400 to-cyan-500 bg-clip-text text-transparent">
                 Grow with us
               </h3>
+              <Image
+                src="https://shorturl.at/vLGfw"
+                alt="icon"
+                width={1000}
+                height={700}
+                className="w-full rounded-lg my-3"
+              />
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wide text-foreground">
                 Expand your reach and grow your brand with expert digital
                 marketing strategies

@@ -39,7 +39,7 @@ const Footer = () => {
 
       <div className="container mt-8 sm:mt-12 lg:mt-16 flex flex-col sm:flex-row items-center justify-between">
         <p className="text-sm text-muted-foreground">
-          &copy; 2024 Acme Inc. All rights reserved.
+          &copy; 2024 Acumen. All rights reserved.
         </p>
         <div className="flex items-center space-x-4 mt-4 sm:mt-0">
           {footerData.footerLinks.map(({ label, href }, index) => (

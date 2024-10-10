@@ -2,19 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import AnimatedCodeSnippet from "./AnimatedCodeSnippet";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  PhoneIcon,
+} from "lucide-react";
 
 const Hero = () => {
   return (
     <>
       <section className="relative w-full min-h-screen bg-gradient-to-r from-DarkBlue to-NavyBlue text-white flex flex-col items-center justify-center overflow-hidden">
-        {/* Background Video */}
-        <Image
-          className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/img/bg-git.gif"
-          alt={"gif"}
-          width={1920}
-          height={1080}
-        ></Image>
+        <div className="matrix-effect absolute top-0 left-0 w-full h-full"></div>
 
         {/* Overlay for gradient effect */}
         <div className="absolute inset-0 bg-gradient-to-r from-DarkBlue to-NavyBlue opacity-90"></div>
@@ -41,12 +40,42 @@ const Hero = () => {
                 reality.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center lg:justify-start">
-                <a
-                  className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                  href="/"
-                >
-                  Go to home
-                </a>
+                <div className="flex items-center gap-4">
+                  <Link
+                    href="#"
+                    className="inline-flex h-10 items-center justify-center rounded-md bg-[#25D366] px-4 text-sm font-medium text-DarkBlue shadow transition-colors hover:bg-[#1da851] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                    prefetch={false}
+                  >
+                    <PhoneIcon className="mr-2 h-5 w-5" />
+                    WhatsApp
+                  </Link>
+                  <div className="flex items-center gap-4">
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                      prefetch={false}
+                    >
+                      <InstagramIcon className="h-6 w-6" />
+                      <span className="sr-only">Instagram</span>
+                    </Link>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                      prefetch={false}
+                    >
+                      <FacebookIcon className="h-6 w-6" />
+                      <span className="sr-only">Facebook</span>
+                    </Link>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                      prefetch={false}
+                    >
+                      <LinkedinIcon className="h-6 w-6" />
+                      <span className="sr-only">LinkedIn</span>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="hidden lg:flex items-center justify-center">

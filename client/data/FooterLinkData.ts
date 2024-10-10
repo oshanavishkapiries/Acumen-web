@@ -6,10 +6,10 @@ export const footerData = {
     description: "Crafting beautiful and functional products since 2024.",
   },
   quickLinks: [
-    { label: "Home", href: "#" },
-    { label: "About", href: "#" },
-    { label: "Products", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "#about-us" },
+    { label: "Services", href: "#services" },
+    { label: "Contact", href: "#contact-us" },
   ],
   resources: [
     { label: "Documentation", href: "#" },
@@ -19,7 +19,7 @@ export const footerData = {
   ],
   contactInfo: [
     { icon: PhoneIcon, text: "+1 (555) 555-5555" },
-    { icon: MailIcon, text: "support@acme.com" },
+    { icon: MailIcon, text: "support@acumen.com" },
     { icon: LocateIcon, text: "123 Main St, Anytown USA" },
   ],
   footerLinks: [

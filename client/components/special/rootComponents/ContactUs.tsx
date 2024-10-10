@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
@@ -24,9 +24,9 @@ const ContactUs = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3
-      }
-    }
+        staggerChildren: 0.3,
+      },
+    },
   };
 
   const itemVariants = {
@@ -35,9 +35,9 @@ const ContactUs = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5
-      }
-    }
+        duration: 0.5,
+      },
+    },
   };
 
   return (
@@ -54,15 +54,15 @@ const ContactUs = () => {
             Get in touch
           </h2>
           <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Have a question or need help? Reach out to our team through
-            WhatsApp or give us a call.
+            Have a question or need help? Reach out to our team through WhatsApp
+            or give us a call.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <motion.div variants={itemVariants}>
               <Link
                 href="#"
                 target="_blank"
-                className="inline-flex items-center justify-center rounded-md bg-green-500 px-6 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-green-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-500 disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex items-center justify-center rounded-md bg-green-500 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-green-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-500 disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 <PhoneIcon className="mr-2 h-5 w-5" />
@@ -72,7 +72,7 @@ const ContactUs = () => {
             <motion.div variants={itemVariants}>
               <Link
                 href="#"
-                className="inline-flex bg-DarkBlue hover:bg-DarkBlue/70 items-center justify-center rounded-md px-6 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex bg-DarkBlue hover:bg-DarkBlue/70 items-center justify-center rounded-md px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 <PhoneIcon className="mr-2 h-5 w-5" />
